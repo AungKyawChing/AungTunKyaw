@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aung Tun Kyaw</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Aung Tun Kyaw</h1>
+    <nav>
+      <ul id="navmenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <i class="fas fa-bars" id="navigation" onclick="toggleNav()"></i>
+    </nav>
+  </header>
+  <!-- Header End -->
+  <!-- Home Start -->
+  <div id="home">
+    <div class="home-container">
+      <div class="home-text">
+        <p>U.S. Army</p>
+        <h1>Hi I'm <br><span>Aung Tun Kyaw</span></h1>
+      </div>
+    </div>
+  </div>
+  <!-- Home End -->
+<!-- About Start -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/about.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            "Hello, I'm Aung Tun Kyaw, a dedicated and experienced system administrator with a passion for technology. I'm originally from Myanmar, but moved to the United States in 20XX to pursue my dream of working in IT. I'm currently serving in the US Army as a system administrator, where I'm responsible for maintaining and troubleshooting the Army's computer systems. I'm also a former IT assistant at the City University of New York, where I gained experience in supporting students and faculty with their computer needs. I'm a hard worker and is always willing to go the extra mile. I'm also a team player and is always willing to help others. In my free time, I enjoys playing soccer and spending time with My family. 
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Versatile</span><br>Proficient in Microsoft Windows, Linux, and Cisco networking</li>
+              <li><span>Skilled</span><br>Experience with Active Directory, DNS, and DHCP</li>
+              <li><span>Resourceful</span><br>Strong problem-solving and troubleshooting skills</li>
+              <li><span>Collaborative</span><br>Ability to work independently and as part of a team</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2019-Current</span><br>US Army, System Administrator</li>
+              <li><span>2017-2019</span><br>City University of New York, IT Assistant</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2013-2017</span><br>NCC Education, Diploma in Information Technology</li>
+              <li><span>2011-2012</span><br>LaGuardia Community College, Associate of Applied Science in Computer Networking</li>
+              <li><span>2006-20010</span><br>BEHS 2 Sittway, High School Diploma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- About End -->
+<!-- Portfolio Start -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Portfolio / Achivement</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/portfolioSite.jpg">
+          <div class="layer">
+            <h3>Lorem ipsum dolor</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ex.
+            </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/ageCalculator.jpg">
+          <div class="layer">
+            <h3>Lorem ipsum dolor</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ex.
+            </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/securedPasswordGenarator.jpg">
+          <div class="layer">
+            <h3>Lorem ipsum dolor</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ex.
+            </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- Portfolio End -->
+  <!-- Contact Start -->
+  <div id="contact">
+    <div class="container">
+      <h1 class="sub-title">Contact Me</h1>
+      <div class="row">
+        <div class="contact-left">  
+          <p><i class="fa-sharp fa-solid fa-paper-plane"></i>aung______@gmail.com</p>
+          <p><i class="fas fa-phone-square-alt"></i>+0123456789</p>
+          <div class="social-icons">
+            <a href="http://facebook.com/mraungtunkyaw" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/blank_CV.pdf" dowmload class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="contactForm">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Send</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact End -->
+  <script src="script.js"></script>
+</body>
+</html>
